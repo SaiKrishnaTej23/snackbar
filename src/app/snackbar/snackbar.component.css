@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.snackbar {
+    position: absolute;
+    background-color: #242424;
+    padding: 20px 15px;
+    width: 300px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    border-radius: 2px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.snackbar:hover {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.snackbar>i {
+    float: right;
+    color: gray;
+    cursor: pointer;
+}
+
+.snackbar.hide {
+    display: none;
+}
+
+.snackbar.top-left {
+    left: 0;
+    top: 2%;
+    animation: snackbartopleft;
+    animation-duration: 2s;
+}
+
+.snackbar.top-middle {
+    left: 40%;
+    top: 2%;
+    animation: snackbartopmiddle;
+    animation-duration: 2s;
+}
+
+.snackbar.top-right {
+    right: 0;
+    top: 2%;
+    animation: snackbartopright;
+    animation-duration: 2s;
+}
+
+.snackbar.bottom-left {
+    bottom: 2%;
+    left: 0;
+    animation: snackbarbottomleft;
+    animation-duration: 2s;
+}
+
+.snackbar.bottom-middle {
+    left: 40%;
+    bottom: 2%;
+    animation: snackbarbottommiddle;
+    animation-duration: 2s;
+}
+
+.snackbar.bottom-right {
+    right: 0;
+    bottom: 2%;
+    animation: snackbarbottomright;
+    animation-duration: 2s;
+}
+
+@keyframes snackbartopleft {
+    0% {
+        left: -500px;
+        top: 2%;
+    }
+    100% {
+        left: 0px;
+        top: 2%;
+    }
+}
+
+@keyframes snackbartopmiddle {
+    0% {
+        left: 40%;
+        top: -20%;
+    }
+    100% {
+        left: 40%;
+        top: 2%;
+    }
+}
+
+@keyframes snackbartopright {
+    0% {
+        right: -500px;
+        top: 2%;
+    }
+    100% {
+        right: 0px;
+        top: 2%;
+    }
+}
+
+@keyframes snackbarbottomleft {
+    0% {
+        left: -500px;
+        bottom: 2%;
+    }
+    100% {
+        left: 0px;
+        bottom: 2%;
+    }
+}
+
+@keyframes snackbarbottommiddle {
+    0% {
+        left: 40%;
+        bottom: -20%;
+    }
+    100% {
+        left: 0px;
+        bottom: 2%;
+    }
+}
+
+@keyframes snackbarbottomright {
+    0% {
+        right: -500px;
+        bottom: 2%;
+    }
+    100% {
+        right: 0px;
+        bottom: 2%;
+    }
+}

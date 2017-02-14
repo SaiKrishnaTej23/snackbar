@@ -1,0 +1,4 @@
+<div class="snackbar" [ngClass]="{    'top-left': class == 1,    'top-middle': class == 2,    'top-right': class == 3,    'bottom-left': class == 4,    'bottom-middle': class == 5,    'bottom-right': class == 6,   'hide': class == 7  }">
+    {{message}}
+    <i class="fa fa-times" (click)="close()"></i>
+</div>
